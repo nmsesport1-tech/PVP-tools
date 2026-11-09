@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "pvptoolkit",
+  "version": "${version}",
+  "name": "PvP Toolkit",
+  "description": "Schlagdauer, Kill-Effekte, No-Death-Animation und Ofen-Timer. Menü über /pvptoolkit oder Mod Menu.",
+  "authors": ["du"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.pvptoolkit.PvpToolkitClient"],
+    "modmenu": ["com.pvptoolkit.ModMenuIntegration"]
+  },
+  "mixins": ["pvptoolkit.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
